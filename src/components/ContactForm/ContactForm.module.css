@@ -17,11 +17,11 @@
 }
 
 .button {
-  margin-top: 10px;
   padding: 5px;
-  width: 100px;
   border-radius: 3px;
   border: 1px solid rgb(193, 191, 191);
+  margin: 0 auto;
+  margin-top: 10px;
   
     &:hover {
       background-color: #c4c4c4;

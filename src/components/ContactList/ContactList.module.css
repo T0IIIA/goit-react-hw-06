@@ -12,12 +12,10 @@
 
 .item {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   border: 2px solid black;
   border-radius: 6px;
   padding: 8px;
-  gap: 30px;
   max-width: 220px;
   width: 100%;
   background-color: #fff;
