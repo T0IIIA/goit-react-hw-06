@@ -1,10 +1,14 @@
+import { useDispatch } from 'react-redux'
 import s from './SearchBox.module.css'
+import { filter } from '../../redux/filtersSlice'
 
 
 
-const SearchBox = ({ value, setSearch }) => {
+const SearchBox = () => {
+  const dispatch = useDispatch()
+
   const onSearch = (e) => {
-    setSearch(e.target.value)
+    dispatch(filter(e.target.value))
   }
 
   return (
@@ -14,7 +18,6 @@ const SearchBox = ({ value, setSearch }) => {
           type='text' 
           name='search' 
           onChange={onSearch} 
-          value={value} 
           placeholder="Search" 
           className={s.input} 
         />
